@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rojo: #ea0429;
+    --verde: #82b5af;
+    --white: #ecf1e6;
+    --blanco: #F6F6F4;
+    --gris-claro: #DFDFE2;
+    --gris: #383538;
+    --negro: #242124;
+
+}
+
+
+
+.grid {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-grilla,
+.right-grilla {
+    margin: 0 auto;
+    margin: 20px;
+    display: inline-grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 40px 15px;
+}
+
+/*desaparecer*/
+.left-grilla div:nth-child(120) {
+    display: none;
+}
+
+.right-grilla div:nth-child(120) {
+    display: none;
+}
+
+/* margin */
+.left-grilla {
+    margin: 20px 0 20px 20px;
+}
+
+.right-grilla {
+    margin: 20px 20px 20px 0;
+}
+
+.left-grilla div {
+    background-color: var(--verde);
+    color: var(--verde);
+
+}
+
+.right-grilla div {
+    background-color: var(--white);
+    color: var(--white);
+}
+
+.grid-left {
+    background-color: var(--white);
+}
+
+.grid-right {
+    background-color: var(--verde);
+}
+
+/* LEFT */
+.grid-left .left-grilla div:nth-child(91) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+    grid-column: 1/11;
+    grid-row: 10/13;
+
+}
+
+.grid-left .left-grilla div:nth-child(53) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+    grid-column: 3/4;
+    grid-row: 8/15;
+
+}
+
+.grid-left .left-grilla div:nth-child(55) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+    grid-column: 5/6;
+    grid-row: 8/15;
+
+}
+
+.grid-left .left-grilla div:nth-child(57) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+    grid-column: 7/8;
+    grid-row: 8/15;
+
+}
+
+.grid-left .left-grilla div:nth-child(59) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+    grid-column: 9/10;
+    grid-row: 8/15;
+
+}
+
+/*RIGHT*/
+.grid-right .right-grilla div:nth-child(91) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+    grid-column: 1/11;
+    grid-row: 10/13;
+
+}
+
+.grid-right .right-grilla div:nth-child(52) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+
+    grid-column: 2/3;
+    grid-row: 8/15;
+
+}
+
+.grid-right .right-grilla div:nth-child(54) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+
+    grid-column: 4/5;
+    grid-row: 8/15;
+
+}
+
+.grid-right .right-grilla div:nth-child(56) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+
+    grid-column: 6/7;
+    grid-row: 8/15;
+
+}
+
+.grid-right .right-grilla div:nth-child(58) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+
+    grid-column: 8/9;
+    grid-row: 8/15;
+
+}
+
+.grid-left .left-grilla div:nth-child(113),
+.grid-left .left-grilla div:nth-child(119),
+.grid-left .left-grilla div:nth-child(115),
+.grid-left .left-grilla div:nth-child(101),
+.grid-left .left-grilla div:nth-child(106),
+.grid-left .left-grilla div:nth-child(87),
+.grid-left .left-grilla div:nth-child(104),
+.grid-left .left-grilla div:nth-child(93),
+.grid-left .left-grilla div:nth-child(97),
+.grid-left .left-grilla div:nth-child(110) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+}
+
+.grid-right .right-grilla div:nth-child(100),
+.grid-right .right-grilla div:nth-child(102),
+.grid-right .right-grilla div:nth-child(105),
+.grid-right .right-grilla div:nth-child(113),
+.grid-right .right-grilla div:nth-child(97),
+.grid-right .right-grilla div:nth-child(118),
+.grid-right .right-grilla div:nth-child(108),
+.grid-right .right-grilla div:nth-child(116) {
+    background-color: var(--rojo);
+    color: var(--rojo);
+}
+
+.informacion {
+    width: 70%;
+    margin: 50px auto;
+    font-family: sans-serif;
+}
+
+.informacion .audio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.informacion p {
+    margin-top: 45px;
+    line-height: 1.6;
+    color: var(--gris);
+}
+
+.back-button a {
+    width: 90px;
+    margin: 20px 0 20px 30px;
+    display: flex;
+    font-size: 16px;
+    padding: 5px 10px;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid var(--negro);
+    border-radius: 50px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    color: var(--negro);
+    background-color: var(--blanco);
+
+}
+
+.back-button a:hover {
+    color: var(--blanco);
+    background-color: var(--negro);
+
+}
