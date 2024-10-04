@@ -198,6 +198,8 @@
     margin-top: 45px;
     line-height: 1.6;
     color: var(--gris);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
 }
 
 .back-button a {
